@@ -10,11 +10,6 @@
 
 @implementation KFBAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
-}
-
 - (IBAction)loadFile:(id)sender
 {
     NSLog(@"Loading file...");
@@ -27,28 +22,30 @@
     {
         NSURL *url = [panel URLs][0];
         NSLog(@"Loading file %@", url);
-        
-        // Tell the views to do their thing
+
         NSError *error;
         
         // Load the audio file into the waveform view
-        if (![_waveformView setAudioFile:url withError:&error])
+        if (![_waveformView_Abs setAudioFile:url withError:&error])
         {
             NSLog(@"Couldn't set audio file for waveform view: %@", error);
         }
         
+        if (![_waveformView_Average setAudioFile:url withError:&error])
+        {
+            NSLog(@"Couldn't set audio file for waveform view: %@", error);
+        }
+
         // Bin the audio data
-        // TODO: Bin into number of pixels
-        if (![_waveformView splitAudioDataIntoNumberOfBins:64 usingStrategy:kKFBBinStrategy_Abs withError:&error])
+        if (![_waveformView_Abs binAudioDataWithStrategy:kKFBBinStrategy_Abs error:&error])
         {
             NSLog(@"Couldn't split the audio into bins: %@", error);
         }
         
-
-//        if (![_spectrogramView setAudioFile:url withError:&error])
-//        {
-//            NSLog(@"Couldn't set audio file for waveform view: %@", error);
-//        }
+        if (![_waveformView_Average binAudioDataWithStrategy:kKFBBinStrategy_Average error:&error])
+        {
+            NSLog(@"Couldn't split the audio into bins: %@", error);
+        }
     }
 }
 

@@ -12,8 +12,11 @@
 @interface KFBAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet KFBAudioFileWaveformView    *waveformView;
-@property (assign) IBOutlet KFBAudioFileSpectrogramView *spectrogramView;
+
+@property (assign) IBOutlet KFBAudioFileWaveformView    *waveformView_Abs;
+@property (assign) IBOutlet KFBAudioFileWaveformView    *waveformView_Average;
+
+//@property (assign) IBOutlet KFBAudioFileSpectrogramView *spectrogramView;
 
 - (IBAction)loadFile:(id)sender;
 

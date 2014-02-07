@@ -14,33 +14,20 @@
 		FEA0133A187EAD6D00413B79 /* KFBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA01339187EAD6D00413B79 /* KFBAppDelegate.m */; };
 		FEA0133D187EAD6D00413B79 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA0133B187EAD6D00413B79 /* MainMenu.xib */; };
 		FEA0133F187EAD6D00413B79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA0133E187EAD6D00413B79 /* Images.xcassets */; };
-		FEA01346187EAD6D00413B79 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA01345187EAD6D00413B79 /* XCTest.framework */; };
-		FEA01347187EAD6D00413B79 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA01326187EAD6D00413B79 /* Cocoa.framework */; };
-		FEA0134F187EAD6D00413B79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEA0134D187EAD6D00413B79 /* InfoPlist.strings */; };
-		FEA01351187EAD6D00413B79 /* AudioFileViewsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA01350187EAD6D00413B79 /* AudioFileViewsTestTests.m */; };
-		FEA01361187EB39F00413B79 /* KFBAudioFileView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA01360187EB39F00413B79 /* KFBAudioFileView.framework */; };
-		FEA01364187EB43E00413B79 /* KFBAudioFileView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FEA01360187EB39F00413B79 /* KFBAudioFileView.framework */; };
+		FEA1268618A4F77000D47FF4 /* KFBAudioFileView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA1268518A4F77000D47FF4 /* KFBAudioFileView.framework */; };
+		FEA1268818A4F7D500D47FF4 /* KFBAudioFileView.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = FEA1268518A4F77000D47FF4 /* KFBAudioFileView.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FEA01348187EAD6D00413B79 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEA0131B187EAD6D00413B79 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FEA01322187EAD6D00413B79;
-			remoteInfo = AudioFileViewsTest;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		FEA01363187EB43100413B79 /* CopyFiles */ = {
+		FEA01363187EB43100413B79 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FEA01364187EB43E00413B79 /* KFBAudioFileView.framework in CopyFiles */,
+				FEA1268818A4F7D500D47FF4 /* KFBAudioFileView.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -60,12 +47,9 @@
 		FEA01339187EAD6D00413B79 /* KFBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFBAppDelegate.m; sourceTree = "<group>"; };
 		FEA0133C187EAD6D00413B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FEA0133E187EAD6D00413B79 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FEA01344187EAD6D00413B79 /* AudioFileViewsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioFileViewsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA01345187EAD6D00413B79 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FEA0134C187EAD6D00413B79 /* AudioFileViewsTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioFileViewsTestTests-Info.plist"; sourceTree = "<group>"; };
-		FEA0134E187EAD6D00413B79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FEA01350187EAD6D00413B79 /* AudioFileViewsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFileViewsTestTests.m; sourceTree = "<group>"; };
-		FEA01360187EB39F00413B79 /* KFBAudioFileView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KFBAudioFileView.framework; path = "../../../Library/Developer/Xcode/DerivedData/KFBAudioFileView-ejgvlgcxlsozrzdzetkuzhzmvfnx/Build/Products/Debug/KFBAudioFileView.framework"; sourceTree = "<group>"; };
+		FEA1268518A4F77000D47FF4 /* KFBAudioFileView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KFBAudioFileView.framework; path = "../../../Library/Developer/Xcode/DerivedData/KFBAudioFileView-ejgvlgcxlsozrzdzetkuzhzmvfnx/Build/Products/Debug/KFBAudioFileView.framework"; sourceTree = "<group>"; };
+		FEC3801918A4DCF100FBBE84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA01361187EB39F00413B79 /* KFBAudioFileView.framework in Frameworks */,
+				FEA1268618A4F77000D47FF4 /* KFBAudioFileView.framework in Frameworks */,
 				FEA01327187EAD6D00413B79 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEA01341187EAD6D00413B79 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEA01347187EAD6D00413B79 /* Cocoa.framework in Frameworks */,
-				FEA01346187EAD6D00413B79 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				FEA0132C187EAD6D00413B79 /* AudioFileViewsTest */,
-				FEA0134A187EAD6D00413B79 /* AudioFileViewsTestTests */,
 				FEA01325187EAD6D00413B79 /* Frameworks */,
 				FEA01324187EAD6D00413B79 /* Products */,
 			);
@@ -104,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				FEA01323187EAD6D00413B79 /* AudioFileViewsTest.app */,
-				FEA01344187EAD6D00413B79 /* AudioFileViewsTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,9 +85,10 @@
 		FEA01325187EAD6D00413B79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FEA01360187EB39F00413B79 /* KFBAudioFileView.framework */,
+				FEA1268518A4F77000D47FF4 /* KFBAudioFileView.framework */,
 				FEA01326187EAD6D00413B79 /* Cocoa.framework */,
 				FEA01345187EAD6D00413B79 /* XCTest.framework */,
+				FEC3801918A4DCF100FBBE84 /* Foundation.framework */,
 				FEA01328187EAD6D00413B79 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -154,24 +128,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FEA0134A187EAD6D00413B79 /* AudioFileViewsTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				FEA01350187EAD6D00413B79 /* AudioFileViewsTestTests.m */,
-				FEA0134B187EAD6D00413B79 /* Supporting Files */,
-			);
-			path = AudioFileViewsTestTests;
-			sourceTree = "<group>";
-		};
-		FEA0134B187EAD6D00413B79 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FEA0134C187EAD6D00413B79 /* AudioFileViewsTestTests-Info.plist */,
-				FEA0134D187EAD6D00413B79 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,7 +138,7 @@
 				FEA0131F187EAD6D00413B79 /* Sources */,
 				FEA01320187EAD6D00413B79 /* Frameworks */,
 				FEA01321187EAD6D00413B79 /* Resources */,
-				FEA01363187EB43100413B79 /* CopyFiles */,
+				FEA01363187EB43100413B79 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -193,24 +149,6 @@
 			productReference = FEA01323187EAD6D00413B79 /* AudioFileViewsTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FEA01343187EAD6D00413B79 /* AudioFileViewsTestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FEA01357187EAD6D00413B79 /* Build configuration list for PBXNativeTarget "AudioFileViewsTestTests" */;
-			buildPhases = (
-				FEA01340187EAD6D00413B79 /* Sources */,
-				FEA01341187EAD6D00413B79 /* Frameworks */,
-				FEA01342187EAD6D00413B79 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FEA01349187EAD6D00413B79 /* PBXTargetDependency */,
-			);
-			name = AudioFileViewsTestTests;
-			productName = AudioFileViewsTestTests;
-			productReference = FEA01344187EAD6D00413B79 /* AudioFileViewsTestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -220,11 +158,6 @@
 				CLASSPREFIX = KFB;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = KFB;
-				TargetAttributes = {
-					FEA01343187EAD6D00413B79 = {
-						TestTargetID = FEA01322187EAD6D00413B79;
-					};
-				};
 			};
 			buildConfigurationList = FEA0131E187EAD6D00413B79 /* Build configuration list for PBXProject "AudioFileViewsTest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -240,7 +173,6 @@
 			projectRoot = "";
 			targets = (
 				FEA01322187EAD6D00413B79 /* AudioFileViewsTest */,
-				FEA01343187EAD6D00413B79 /* AudioFileViewsTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,14 +189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEA01342187EAD6D00413B79 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEA0134F187EAD6D00413B79 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -277,23 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEA01340187EAD6D00413B79 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEA01351187EAD6D00413B79 /* AudioFileViewsTestTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FEA01349187EAD6D00413B79 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FEA01322187EAD6D00413B79 /* AudioFileViewsTest */;
-			targetProxy = FEA01348187EAD6D00413B79 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FEA0132F187EAD6D00413B79 /* InfoPlist.strings */ = {
@@ -318,14 +226,6 @@
 				FEA0133C187EAD6D00413B79 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		FEA0134D187EAD6D00413B79 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FEA0134E187EAD6D00413B79 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -437,46 +337,6 @@
 			};
 			name = Release;
 		};
-		FEA01358187EAD6D00413B79 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AudioFileViewsTest.app/Contents/MacOS/AudioFileViewsTest";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AudioFileViewsTest/AudioFileViewsTest-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AudioFileViewsTestTests/AudioFileViewsTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		FEA01359187EAD6D00413B79 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AudioFileViewsTest.app/Contents/MacOS/AudioFileViewsTest";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AudioFileViewsTest/AudioFileViewsTest-Prefix.pch";
-				INFOPLIST_FILE = "AudioFileViewsTestTests/AudioFileViewsTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,14 +356,7 @@
 				FEA01356187EAD6D00413B79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		FEA01357187EAD6D00413B79 /* Build configuration list for PBXNativeTarget "AudioFileViewsTestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FEA01358187EAD6D00413B79 /* Debug */,
-				FEA01359187EAD6D00413B79 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

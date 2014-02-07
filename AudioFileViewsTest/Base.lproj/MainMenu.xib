@@ -649,22 +649,22 @@
         <window title="AudioFileViewsTest" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="305"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="295"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="305"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="295"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAT-B3-nP8" customClass="KFBAudioFileWaveformView">
-                        <rect key="frame" x="20" y="177" width="440" height="108"/>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="mAT-B3-nP8" customClass="KFBAudioFileWaveformView">
+                        <rect key="frame" x="20" y="172" width="440" height="103"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e6Y-D3-Fhr" customClass="KFBAudioFileSpectrogramView">
-                        <rect key="frame" x="20" y="61" width="440" height="108"/>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="y1J-l9-dam" customClass="KFBAudioFileWaveformView">
+                        <rect key="frame" x="20" y="61" width="440" height="103"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6xm-Mk-ig7">
-                        <rect key="frame" x="14" y="13" width="106" height="32"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6xm-Mk-ig7">
+                        <rect key="frame" x="14" y="13" width="452" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Load file..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yCc-AY-r0l">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -675,12 +675,26 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6xm-Mk-ig7" secondAttribute="bottom" constant="20" id="5dR-kj-oSZ"/>
+                    <constraint firstItem="mAT-B3-nP8" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="6Ks-ZO-OzS"/>
+                    <constraint firstAttribute="trailing" secondItem="y1J-l9-dam" secondAttribute="trailing" constant="20" id="AgV-SG-RDr"/>
+                    <constraint firstItem="y1J-l9-dam" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="QQF-xv-yXg"/>
+                    <constraint firstAttribute="trailing" secondItem="mAT-B3-nP8" secondAttribute="trailing" constant="20" id="T21-te-uHJ"/>
+                    <constraint firstItem="6xm-Mk-ig7" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="TJT-1s-fPk"/>
+                    <constraint firstItem="mAT-B3-nP8" firstAttribute="top" secondItem="372" secondAttribute="top" constant="20" id="ixj-la-9ZU"/>
+                    <constraint firstItem="6xm-Mk-ig7" firstAttribute="top" secondItem="y1J-l9-dam" secondAttribute="bottom" constant="20" id="k4M-yZ-8N1"/>
+                    <constraint firstItem="y1J-l9-dam" firstAttribute="height" secondItem="mAT-B3-nP8" secondAttribute="height" id="rCD-nF-Rr4"/>
+                    <constraint firstItem="y1J-l9-dam" firstAttribute="top" secondItem="mAT-B3-nP8" secondAttribute="bottom" constant="8" id="y0R-fI-Sxk"/>
+                    <constraint firstAttribute="trailing" secondItem="6xm-Mk-ig7" secondAttribute="trailing" constant="20" id="ywH-vj-b5i"/>
+                </constraints>
             </view>
         </window>
         <customObject id="494" customClass="KFBAppDelegate">
             <connections>
-                <outlet property="spectrogramView" destination="e6Y-D3-Fhr" id="LOQ-Jr-orb"/>
                 <outlet property="waveformView" destination="mAT-B3-nP8" id="Iqg-Fg-loz"/>
+                <outlet property="waveformView_Abs" destination="mAT-B3-nP8" id="eFr-Sg-3Fx"/>
+                <outlet property="waveformView_Average" destination="y1J-l9-dam" id="mG2-1X-d2x"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
